@@ -1,7 +1,8 @@
+import { Flex } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <Flex h={800} >Home</Flex>
   )
 }
