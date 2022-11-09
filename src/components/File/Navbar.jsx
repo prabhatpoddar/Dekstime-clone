@@ -7,17 +7,29 @@ import {
   MenuItem,
   Menu,
   ButtonGroup,
+  SimpleGrid,
 
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaBeer } from "react-icons/fa";
+import { BiFootball } from "react-icons/bi";
 
 export default function Navbar() {
+  const theme = {
+    fontSizes: {
+      lg: '18px',
+    },
+    colors: {
+      gray: {
+        100: '#fafafa',
+        200: '#f7f7f7',
+      },
+    },
+  }
   return (
-    <Flex h="86px" borderTop="4px solid #4EA819" backgroundColor="#FFFFF" boxShadow=" rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px">
-      <Flex w="75%" m="auto" h="92px">
+    <Flex h="96px" borderTop="4px solid #4EA819" backgroundColor="#FFFFF" boxShadow="md">
+      <Flex w="78%" m="auto" h="92px">
         <Flex w="383px">
           <Image
             w="168px"
@@ -25,12 +37,12 @@ export default function Navbar() {
           />
         </Flex>
         <Flex gap={4} alignItems="center">
-          <Link to="/">Demo</Link>
-          <Link to="/">Demo</Link>
-          <Link to="/">Demo</Link>
-          <Link to="/">Demo</Link>
-          <Link to="/">Demo</Link>
-          <Link to="/">Demo</Link>
+          <Link to="/" ><b>Demo</b></Link>
+          <Link to="/"><b>Feature</b></Link>
+          <Link to="/"><b>Pricing</b></Link>
+          <Link to="/"><b>About us</b></Link>
+          <Link to="/"><b>FAQ</b></Link>
+          <Link to="/"><b>Blog</b></Link>
           <ButtonGroup gap="2">
             <Button colorScheme="whatsapp" variant="outline">
               Login
@@ -43,17 +55,21 @@ export default function Navbar() {
           <Menu>
             {({ isOpen }) => (
               <>
+              
                 <MenuButton
                   isActive={isOpen}
                   as={Button}
-                  rightIcon={<ChevronDownIcon />}
+                  rightIcon={<ChevronDownIcon w="16px"/>}
+                  leftIcon={<BiFootball w="16px"/>}
+                 
+
                 >
-                  {isOpen ? "Close" : "Open"}
+                  {isOpen ? "EN" : "EN"}
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>Download</MenuItem>
-                  <MenuItem onClick={() => alert("Kagebunshin")}>
-                    Create a Copy
+                  <MenuItem>English</MenuItem>
+                  <MenuItem onClick={() => alert("Language Set As Espanol ")}>
+                    Espanol
                   </MenuItem>
                 </MenuList>
               </>
