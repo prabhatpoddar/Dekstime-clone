@@ -16,6 +16,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { BiFootball } from "react-icons/bi";
+import { IoExitOutline } from "react-icons/io5";
 import Slider from "./Slider";
 
 export default function Navbar() {
@@ -29,6 +30,7 @@ export default function Navbar() {
     >
       <Flex w="78%" m="auto" h="92px">
         <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
+        <Spacer/>
         <Spacer/>
        
 
@@ -90,7 +92,7 @@ export default function Navbar() {
           </Flex>
         </Hide>
         <Spacer/>
-        <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
+        <Flex display="flex" alignItems="center" ><Show above="base" below="xl"><IoExitOutline fontSize="30px"/></Show></Flex>
       </Flex>
     </Flex>
   );
