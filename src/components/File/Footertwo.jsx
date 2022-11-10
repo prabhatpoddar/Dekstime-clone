@@ -56,7 +56,11 @@ export default function Footertwo() {
           </Flex>
         </Flex>
       </Grid>
-      <Flex h="52px" w="100%" bg="RGBA(0, 0, 0, .3)"></Flex>
+      <Flex h="52px" w="100%" bg="RGBA(0, 0, 0, .3)" pl="150px" pr="200px" alignItems="center">
+        <Text fontSize="12px">© 2011 - 2022 DeskTime</Text>
+        <Spacer/>
+        <Image src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg" />
+      </Flex>
     </>
   );
 }
