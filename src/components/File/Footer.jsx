@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <Flex w="100%">
       <Grid
-        bg="pink"
         w="100%"
         templateColumns="repeat(5, 1fr)"
         gap={6}
