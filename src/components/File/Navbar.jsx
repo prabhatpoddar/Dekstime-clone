@@ -9,6 +9,7 @@ import {
   ButtonGroup,
   Show,
   Hide,
+  Spacer,
  
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
@@ -27,10 +28,11 @@ export default function Navbar() {
       boxShadow="md"
     >
       <Flex w="78%" m="auto" h="92px">
-        <Show above="base" below="xl"><Slider/></Show>
+        <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
+        <Spacer/>
        
 
-        <Flex w="383px" border="1px solid red">
+        <Flex w="383px" >
           <Image
             w="168px"
             src="https://desktime.com/assets/design/dist/assets/Logo-Dark-Text-Without-Padding.svg"
@@ -87,6 +89,8 @@ export default function Navbar() {
             </Menu>
           </Flex>
         </Hide>
+        <Spacer/>
+        <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
       </Flex>
     </Flex>
   );
