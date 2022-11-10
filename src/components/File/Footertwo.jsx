@@ -1,5 +1,10 @@
 import { Grid, Flex, Image, Spacer, Button } from "@chakra-ui/react";
 import React from "react";
+import { ImFacebook2 } from "react-icons/im";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { SiYoutube } from "react-icons/si";
+import { BsWhatsapp } from "react-icons/bs";
+import { GrSkype } from "react-icons/gr";
 
 export default function Footertwo() {
   return (
@@ -16,20 +21,28 @@ export default function Footertwo() {
         </Flex>
       </Flex>
       <Flex>
+        <Flex>
+          <Button>
+            <ImFacebook2 />
+          </Button>
+          <Button>
+            <FaTwitter />
+          </Button>
+          <Button>
+            <SiYoutube />{" "}
+          </Button>
+          <Button>
+            <FaLinkedin />
+          </Button>
+          <Button>
+            <GrSkype />
+          </Button>
+          <Button>
+            <BsWhatsapp />
+          </Button>
+        </Flex>
 
-      <Flex>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-      </Flex>
-
-
-
-      <Flex></Flex>
-
+        <Flex></Flex>
       </Flex>
     </Grid>
   );
