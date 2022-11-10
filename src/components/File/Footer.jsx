@@ -12,6 +12,7 @@ export default function Footer() {
         pl="150px"
         h="413px"
         pb="50px"
+        pr="100px"
       >
         <Grid textAlign="left">
           <GridItem>
