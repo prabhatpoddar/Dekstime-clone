@@ -11,6 +11,7 @@ import {
     Button,
     Input
   } from '@chakra-ui/react'
+  import { AiOutlineMenu } from 'react-icons/ai';
 
 export default function Slider() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -18,8 +19,8 @@ export default function Slider() {
   
     return (
       <>
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-          Open
+        <Button ref={btnRef} bg="transparent" onClick={onOpen}>
+         <AiOutlineMenu/>
         </Button>
         <Drawer
           isOpen={isOpen}
