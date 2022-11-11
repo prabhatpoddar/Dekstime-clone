@@ -25,12 +25,12 @@ export default function Acording() {
             Things worth knowing about using a time tracker
           </Heading>
         </Flex>
-        <Grid w="60%" m="auto" h={400}>
+        <Grid w="60%" m="50px auto 50px auto" >
           <Accordion>
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex="1" textAlign="left">
+                  <Box flex="1" textAlign="left" as="b">
                     How does using a time tracker improve productivity?
                   </Box>
                   <AccordionIcon />
@@ -50,7 +50,7 @@ export default function Acording() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex="1" textAlign="left">
+                  <Box flex="1" textAlign="left" as="b">
                     Can implementing DeskTime prevent burnout?
                   </Box>
                   <AccordionIcon />
@@ -67,7 +67,7 @@ export default function Acording() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex="1" textAlign="left">
+                  <Box flex="1" textAlign="left" as="b">
                     Is my team's privacy safe when using a time tracker?
                   </Box>
                   <AccordionIcon />
@@ -88,7 +88,7 @@ export default function Acording() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex="1" textAlign="left">
+                  <Box flex="1" textAlign="left" as="b">
                     How to communicate using a time tracker with your team?
                   </Box>
                   <AccordionIcon />
