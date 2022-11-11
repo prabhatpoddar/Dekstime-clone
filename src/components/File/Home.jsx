@@ -39,6 +39,7 @@ import {
 } from "react-icons/bs";
 import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
 import { GoProject, GoScreenFull, GoGraph, GoCheck } from "react-icons/go";
+import Acording from "./Acording";
 
 export default function Home() {
   return (
@@ -733,6 +734,9 @@ export default function Home() {
       </Grid>
 
       {/* ===========================next Item===================================== */}
+      <Grid>
+        <Acording/>
+      </Grid>
       {/* ===========================next Item===================================== */}
     </>
   );
