@@ -38,7 +38,7 @@ import {
   BsApple,
 } from "react-icons/bs";
 import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
-import { GoProject, GoScreenFull, GoGraph,GoCheck } from "react-icons/go";
+import { GoProject, GoScreenFull, GoGraph, GoCheck } from "react-icons/go";
 
 export default function Home() {
   return (
@@ -510,7 +510,7 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
 
-      <Grid mt={50}>
+      <Grid mt={70} pl={100} pr={100}>
         <GridItem>
           <Grid w={750} m="auto">
             <Heading>
@@ -524,38 +524,46 @@ export default function Home() {
         </GridItem>
         <GridItem>
           {/* =====================================three part start=================== */}
-          <Grid templateColumns="1fr 1fr 1fr" pl={100} pr={100} justifyContent="left" color="RGB(0,0,0,0.6)" gap={6} >
+          <Grid
+            templateColumns="1fr 1fr 1fr"
+            pl={100}
+            pr={100}
+            justifyContent="left"
+            color="RGB(0,0,0,0.6)"
+            gap={10}
+            mt={50}
+          >
             <GridItem>
-              <Grid>
+              <Grid gap={3}>
                 <GridItem textAlign="left">
                   <Image src="	https://desktime.com/static/web/new-homepage/desktop/desktop.webp" />
                 </GridItem>
                 <GridItem textAlign="left">
                   <Heading size="md">DeskTime for desktops</Heading>
                 </GridItem>
-                <GridItem textAlign="left" >
-                  <Flex >
-                  <Button bg="transparent">
-                    <BsApple fontSize="30px"  />
-                  </Button>
-                  <Button bg="transparent">
-                    <FaLinux  fontSize="30px"/>
-                  </Button>
-                  <Button bg="transparent">
-                    <AiFillAndroid fontSize="30px" />
-                  </Button>
+                <GridItem textAlign="left">
+                  <Flex>
+                    <Button bg="transparent">
+                      <BsApple fontSize="30px" />
+                    </Button>
+                    <Button bg="transparent">
+                      <FaLinux fontSize="30px" />
+                    </Button>
+                    <Button bg="transparent">
+                      <AiFillAndroid fontSize="30px" />
+                    </Button>
                   </Flex>
                 </GridItem>
                 <GridItem textAlign="left">
                   <Text>Requires download and installation</Text>
                 </GridItem>
                 <GridItem textAlign="left">
-                  <Grid justifyContent="left" >
+                  <Grid justifyContent="left" gap={3}>
                     <Tag bg="transparent">
                       {" "}
                       <GoCheck color="green" fontSize="24px" />{" "}
                       <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
-                        Optimize your resources
+                        Fully automated time tracker
                       </TagLabel>
                     </Tag>
 
@@ -563,7 +571,7 @@ export default function Home() {
                       {" "}
                       <GoCheck color="green" fontSize="24px" />{" "}
                       <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
-                        Optimize your resources
+                        App, URL & Document title tracking
                       </TagLabel>
                     </Tag>
 
@@ -571,7 +579,7 @@ export default function Home() {
                       {" "}
                       <GoCheck color="green" fontSize="24px" />{" "}
                       <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
-                        Optimize your resources
+                        Project and task tracking
                       </TagLabel>
                     </Tag>
 
@@ -579,7 +587,7 @@ export default function Home() {
                       {" "}
                       <GoCheck color="green" fontSize="24px" />{" "}
                       <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
-                        Optimize your resources
+                        Screenshots
                       </TagLabel>
                     </Tag>
 
@@ -587,21 +595,139 @@ export default function Home() {
                       {" "}
                       <GoCheck color="green" fontSize="24px" />{" "}
                       <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
-                        Optimize your resources
+                        Idle and Private time
                       </TagLabel>
                     </Tag>
                   </Grid>
                 </GridItem>
                 <GridItem textAlign="left">
-                <Button colorScheme="gray.50" variant="outline" w={120} size="sm">
-            LEARN MORE
-            </Button>
-
+                  <Button
+                    colorScheme="gray.50"
+                    variant="outline"
+                    w={120}
+                    size="sm"
+                  >
+                    LEARN MORE
+                  </Button>
                 </GridItem>
               </Grid>
             </GridItem>
-            <GridItem></GridItem>
-            <GridItem></GridItem>
+            <GridItem>
+              <Grid gap={3}>
+                <GridItem textAlign="left">
+                  <Image src="	https://desktime.com/static/web/new-homepage/mobile/mobile.webp" />
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Heading size="md">DeskTime for mobile phones</Heading>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Flex>
+                    <Button bg="transparent">
+                      <BsApple fontSize="30px" />
+                    </Button>
+
+                    <Button bg="transparent">
+                      <AiFillAndroid fontSize="30px" />
+                    </Button>
+                  </Flex>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Text>Requires download and installation</Text>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Grid justifyContent="left" gap={3}>
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Manual time tracker
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Workday overview
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Project and task tracking
+                      </TagLabel>
+                    </Tag>
+                  </Grid>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Button
+                    colorScheme="gray.50"
+                    variant="outline"
+                    w={120}
+                    size="sm"
+                  >
+                    LEARN MORE
+                  </Button>
+                </GridItem>
+              </Grid>
+            </GridItem>
+            <GridItem>
+              <Grid gap={3}>
+                <GridItem textAlign="left">
+                  <Image src="	https://desktime.com/static/web/new-homepage/webtimer/webtimer.webp" />
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Heading size="md">Manual time tracking</Heading>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Flex>
+                    <Text color="green" as="b">Supported on all popular browsers</Text>
+                  </Flex>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Text>No software installation necessary</Text>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Grid justifyContent="left" gap={3}>
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Manual time tracker
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Workday overview
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Project and task tracking
+                      </TagLabel>
+                    </Tag>
+                  </Grid>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Button
+                    colorScheme="gray.50"
+                    variant="outline"
+                    w={120}
+                    size="sm"
+                  >
+                    LEARN MORE
+                  </Button>
+                </GridItem>
+              </Grid>
+            </GridItem>
           </Grid>
         </GridItem>
       </Grid>
