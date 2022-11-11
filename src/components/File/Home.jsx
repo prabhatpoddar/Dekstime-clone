@@ -17,8 +17,12 @@ import { ImFire, ImClock, ImMobile } from "react-icons/im";
 import { BiTask } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { GrIntegration } from "react-icons/gr";
-import { AiFillClockCircle, AiOutlineEyeInvisible } from "react-icons/ai";
-import { FaLayerGroup } from "react-icons/fa";
+import {
+  AiFillClockCircle,
+  AiOutlineEyeInvisible,
+  AiFillAndroid,
+} from "react-icons/ai";
+import { FaLayerGroup, FaLinux } from "react-icons/fa";
 import {
   HiBuildingOffice,
   HiDocument,
@@ -27,9 +31,14 @@ import {
 import { SlGlobe, SlCalculator } from "react-icons/sl";
 import { TbFileInvoice, TbReport, TbBrandBooking } from "react-icons/tb";
 import { GiPumpkinMask, GiSupersonicArrow } from "react-icons/gi";
-import { BsCalendarDate, BsCalendar3, BsFillBellFill } from "react-icons/bs";
+import {
+  BsCalendarDate,
+  BsCalendar3,
+  BsFillBellFill,
+  BsApple,
+} from "react-icons/bs";
 import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
-import { GoProject, GoScreenFull, GoGraph } from "react-icons/go";
+import { GoProject, GoScreenFull, GoGraph,GoCheck } from "react-icons/go";
 
 export default function Home() {
   return (
@@ -473,39 +482,129 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
 
-      <Grid templateColumns="1fr 1fr" pl={100} pr={100} bg="RGBA(0, 0, 0, .06)" pt={50}>
+      <Grid
+        templateColumns="1fr 1fr"
+        pl={100}
+        pr={100}
+        bg="RGBA(0, 0, 0, .06)"
+        pt={50}
+      >
         <GridItem>
           <Image src="	https://desktime.com/static/web/new-homepage/integrations/integrations.webp" />
         </GridItem>
         <GridItem>
           <Grid gap={6} textAlign="left" pt={50}>
-          <Heading>Integrations with popular work tools</Heading>
-          <Text>
-            From calendar apps to help you track offline time, to project
-            management software to make project and task tracking accurate,
-            while effortless. DeskTime can simplify every aspect of your
-            workflow.
-          </Text>
-          <Button colorScheme="gray.50" variant="outline" w={200}>
-            READ MORE
-          </Button>
+            <Heading>Integrations with popular work tools</Heading>
+            <Text>
+              From calendar apps to help you track offline time, to project
+              management software to make project and task tracking accurate,
+              while effortless. DeskTime can simplify every aspect of your
+              workflow.
+            </Text>
+            <Button colorScheme="gray.50" variant="outline" w={200}>
+              READ MORE
+            </Button>
           </Grid>
         </GridItem>
       </Grid>
 
       {/* ===========================next Item===================================== */}
-      
 
+      <Grid mt={50}>
+        <GridItem>
+          <Grid w={750} m="auto">
+            <Heading>
+              A single time tracking app for desktops and mobile phones
+            </Heading>
+            <Text>
+              Whether in the office or on the go – use DeskTime to keep track of
+              your and your team's time.
+            </Text>
+          </Grid>
+        </GridItem>
+        <GridItem>
+          {/* =====================================three part start=================== */}
+          <Grid templateColumns="1fr 1fr 1fr" pl={100} pr={100} justifyContent="left" color="RGB(0,0,0,0.6)" gap={6} >
+            <GridItem>
+              <Grid>
+                <GridItem textAlign="left">
+                  <Image src="	https://desktime.com/static/web/new-homepage/desktop/desktop.webp" />
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Heading size="md">DeskTime for desktops</Heading>
+                </GridItem>
+                <GridItem textAlign="left" >
+                  <Flex >
+                  <Button bg="transparent">
+                    <BsApple fontSize="30px"  />
+                  </Button>
+                  <Button bg="transparent">
+                    <FaLinux  fontSize="30px"/>
+                  </Button>
+                  <Button bg="transparent">
+                    <AiFillAndroid fontSize="30px" />
+                  </Button>
+                  </Flex>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Text>Requires download and installation</Text>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Grid justifyContent="left" >
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Optimize your resources
+                      </TagLabel>
+                    </Tag>
 
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Optimize your resources
+                      </TagLabel>
+                    </Tag>
 
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Optimize your resources
+                      </TagLabel>
+                    </Tag>
 
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Optimize your resources
+                      </TagLabel>
+                    </Tag>
 
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Optimize your resources
+                      </TagLabel>
+                    </Tag>
+                  </Grid>
+                </GridItem>
+                <GridItem textAlign="left">
+                <Button colorScheme="gray.50" variant="outline" w={120} size="sm">
+            LEARN MORE
+            </Button>
 
-
-
-
-
-
+                </GridItem>
+              </Grid>
+            </GridItem>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
+          </Grid>
+        </GridItem>
+      </Grid>
 
       {/* ===========================next Item===================================== */}
       {/* ===========================next Item===================================== */}
