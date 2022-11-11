@@ -48,19 +48,23 @@ export default function Home() {
       <Grid
         bg="url(https://desktime.com/static/web/_common/intro-background.png)"
         mt="50px"
-        pl="150px"
-        pb="150px"
+        pl={{ base: "24px", md: "40px", lg: "150px" }}
+        pb={{ base: "24px", md: "40px", lg: "150px" }}
       >
         <GridItem>
           <Grid
-            templateColumns="repeat(2, 1fr)"
+            templateColumns={{
+              base: " repeat(1, 1fr)",
+              md: " repeat(1, 1fr)",
+              lg: " repeat(2, 1fr)",
+            }}
             gap="30px"
-            pr="120px"
+            pr={{ base: "24px", md: "40px", lg: "120px" }}
             marginBottom="40px"
           >
             <GridItem h="336px">
               <Grid gap="10px" textAlign="left">
-                <Text fontSize="3xl" as="b">
+                <Text fontSize={{ base: "1xl", md: "1xl", lg: "2xl" }} as="b">
                   The ultimate all-in-one time tracker for your business
                 </Text>
                 <Spacer />
@@ -70,11 +74,13 @@ export default function Home() {
                   goals every time.
                 </Text>
                 <Spacer />
-                <Flex justifyContent="center" gap="10px">
-                  <Input w="285px" bg="white" placeholder="Your Work Email" />
-                  <Button colorScheme="whatsapp" variant="solid" w="221px">
-                    Start Free Trail
-                  </Button>
+                <Flex justifyContent="center" gap="10px" flexDirection={{ base: 'column', md: 'column', lg: 'row' }}>
+                 
+                    <Input w="285px" bg="white" placeholder="Your Work Email" />
+                    <Button colorScheme="whatsapp" variant="solid" w="221px">
+                      Start Free Trail
+                    </Button>
+                
                 </Flex>
                 <Spacer />
                 <Text fontSize="md">
@@ -685,7 +691,9 @@ export default function Home() {
                 </GridItem>
                 <GridItem textAlign="left">
                   <Flex>
-                    <Text color="green" as="b">Supported on all popular browsers</Text>
+                    <Text color="green" as="b">
+                      Supported on all popular browsers
+                    </Text>
                   </Flex>
                 </GridItem>
                 <GridItem textAlign="left">
@@ -736,12 +744,12 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
       <Grid>
-        <Acording/>
+        <Acording />
       </Grid>
       {/* ===========================next Item===================================== */}
 
       <Grid>
-        <GreenContainer/>
+        <GreenContainer />
       </Grid>
     </>
   );

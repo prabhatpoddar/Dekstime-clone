@@ -45,24 +45,12 @@ export default function Navbar() {
         </Flex>
         <Hide below="xl">
           <Flex gap={4} alignItems="center" as="b" color="RGB(0,0,0,0.6)">
-            <Link to="/">
-              Demo
-            </Link>
-            <Link to="/">
-            Feature
-            </Link>
-            <Link to="/">
-            Pricing
-            </Link>
-            <Link to="/">
-            About us
-            </Link>
-            <Link to="/">
-            FAQ
-            </Link>
-            <Link to="/">
-            Blog
-            </Link>
+            <Link to="/">Demo</Link>
+            <Link to="/">Feature</Link>
+            <Link to="/">Pricing</Link>
+            <Link to="/">About us</Link>
+            <Link to="/">FAQ</Link>
+            <Link to="/">Blog</Link>
             <ButtonGroup gap="2">
               <Button colorScheme="whatsapp" variant="outline">
                 <Link to="/login">Login</Link>
