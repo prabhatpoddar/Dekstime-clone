@@ -12,10 +12,13 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import React from "react";
-import { IoRocket } from "react-icons/io5";
-import { ImFire } from "react-icons/im";
+import { IoRocket,IoBuild } from "react-icons/io5";
+import { ImFire, } from "react-icons/im";
 import { BiTask } from "react-icons/bi";
 import { GoGraph } from "react-icons/go";
+import { AiFillClockCircle } from "react-icons/ai";
+import { FaLayerGroup } from "react-icons/fa";
+import { HiBuildingOffice } from "react-icons/hi2";
 
 
 export default function Home() {
@@ -69,9 +72,9 @@ export default function Home() {
             <GridItem>
               <iframe
                 src="https://www.youtube.com/embed/sgmDvqlSMF4?playlist=sgmDvqlSMF4&autoplay=1&mute=1&loop=1&enablejsapi=1&origin=https%3A%2F%2Fdesktime.com"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 width="554px"
                 height="312px"
               ></iframe>
@@ -141,8 +144,33 @@ export default function Home() {
         </Grid>
       </GridItem>
       <GridItem>
-        <Grid w="70%" m="auto" templateColumns="1fr 1fr">
-          <GridItem></GridItem>
+        <Grid  m="auto" templateColumns="1fr 1fr" alignItems="center">
+          <GridItem>
+
+            <Grid gap={10} textAlign="left" pl="150px">
+            <GridItem>
+            <Tag bg="transparent"> <AiFillClockCircle color="green" fontSize="24px"/> <TagLabel fontSize="18px">No more manual time trackers</TagLabel></Tag>
+              <Text w="80%" ml="6%">
+No more manual time trackers
+Fully automatic start and end times, no manual entry, and no human error – the automatic time tracker starts up as soon as you open the computer and stops when you close it.</Text>
+            </GridItem> <GridItem>
+            <Tag bg="transparent"> <FaLayerGroup color="green" fontSize="24px"/> <TagLabel fontSize="18px">Oversee work progress</TagLabel></Tag>
+              <Text w="80%" ml="6%">With URL and document title tracking it's easy to always be informed about your team's overall progress and habits during work hours.</Text>
+            </GridItem> <GridItem>
+            <Tag bg="transparent"> <IoBuild color="green" fontSize="24px"/> <TagLabel fontSize="18px">Optimize your resources</TagLabel></Tag>
+              <Text w="80%" ml="6%">Estimate project costs, assign hourly rates, issue invoices, and control expenses. Project management is easy when you have a birdseye view of all ongoing processes.</Text>
+            </GridItem> <GridItem>
+            <Tag bg="transparent"> <HiBuildingOffice color="green" fontSize="24px"/> <TagLabel fontSize="18px">Run your office smoothly</TagLabel></Tag>
+              <Text w="80%" ml="6%">DeskTime isn't just a time tracker. You can assign shifts and oversee absences, stay informed about remote workers and run a hybrid office all on one platform.</Text>
+            </GridItem> 
+             
+            </Grid>
+
+
+
+
+
+          </GridItem>
           <GridItem>
             <Image src="https://desktime.com/static/web/new-homepage/universal-platform/universal-platform.webp"/>
           </GridItem>
