@@ -13,12 +13,19 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { IoRocket, IoBuild } from "react-icons/io5";
-import { ImFire } from "react-icons/im";
+import { ImFire, ImClock, ImMobile } from "react-icons/im";
 import { BiTask } from "react-icons/bi";
-import { GoGraph } from "react-icons/go";
-import { AiFillClockCircle } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
+import { GrIntegration } from "react-icons/gr";
+import { AiFillClockCircle, AiOutlineEyeInvisible } from "react-icons/ai";
 import { FaLayerGroup } from "react-icons/fa";
-import { HiBuildingOffice } from "react-icons/hi2";
+import { HiBuildingOffice, HiDocument,HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import { SlGlobe, SlCalculator } from "react-icons/sl";
+import { TbFileInvoice, TbReport, TbBrandBooking } from "react-icons/tb";
+import { GiPumpkinMask, GiSupersonicArrow } from "react-icons/gi";
+import { BsCalendarDate, BsCalendar3,BsFillBellFill } from "react-icons/bs";
+import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
+import { GoProject, GoScreenFull, GoGraph } from "react-icons/go";
 
 export default function Home() {
   return (
@@ -163,7 +170,7 @@ export default function Home() {
 
       {/* ====================================Next Item============================================= */}
 
-      <Grid bgGradient='linear(to-b, RGBA(0, 0, 0, .1), white)' mt="60px">
+      <Grid bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)" mt="60px">
         <GridItem>
           <Grid w="48%" m="40px auto" lineHeight={8}>
             <Heading as="h2" size="lg" lineHeight={10}>
@@ -246,107 +253,123 @@ export default function Home() {
           <Grid justifyContent="center" mt="30px" mb="30px" gap={25}>
             <Flex gap="8px" justifyContent="center">
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)">
-                <ImFire ml="-7px" mr="5px" color="RGBA(0, 0, 0, .6)" />
-                <TagLabel color="RGBA(0, 0, 0, .6)">
+                <ImClock ml="-7px" mr="8px" color="RGBA(0, 0, 0, .6)" />
+                <TagLabel color="RGBA(0, 0, 0, .6)" ml={2}>
                   Automatic Time Tracking
                 </TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Ofline Time Tracking</TagLabel>
+                <SlGlobe ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Ofline Time Tracking</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Document Title tracking</TagLabel>
+                <HiDocument ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Document Title tracking</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Privet time option</TagLabel>
+                <AiOutlineEyeInvisible ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Privet time option</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Invoicing</TagLabel>
+                <TbFileInvoice ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Invoicing</TagLabel>
               </Tag>
             </Flex>
 
             <Flex gap="8px" justifyContent="center">
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)">
-                <ImFire ml="-7px" mr="5px" color="RGBA(0, 0, 0, .6)" />
-                <TagLabel color="RGBA(0, 0, 0, .6)">Pomodoro Timer</TagLabel>
+                <GiPumpkinMask ml="-7px" mr="5px" color="RGBA(0, 0, 0, .6)" />
+                <TagLabel ml={2} color="RGBA(0, 0, 0, .6)">
+                  Pomodoro Timer
+                </TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Cost Calculation</TagLabel>
+                <SlCalculator ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Cost Calculation</TagLabel>
               </Tag>
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Team's contacts</TagLabel>
-              </Tag>
-
-              <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Costom report</TagLabel>
+                <BsCalendarDate ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Team's contacts</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Absence Calender</TagLabel>
+                <TbReport ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Custom report</TagLabel>
+              </Tag>
+
+              <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
+                <BsCalendar3 ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Absence Calender</TagLabel>
               </Tag>
             </Flex>
 
             <Flex gap="8px" justifyContent="center">
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)">
-                <ImFire ml="-7px" mr="5px" color="RGBA(0, 0, 0, .6)" />
-                <TagLabel color="RGBA(0, 0, 0, .6)">Web time tracker</TagLabel>
+                <RiTimerFlashLine
+                  ml="-7px"
+                  mr="5px"
+                  color="RGBA(0, 0, 0, .6)"
+                />
+                <TagLabel ml={2} color="RGBA(0, 0, 0, .6)">
+                  Web time tracker
+                </TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Third-party Integration</TagLabel>
+                <GrIntegration ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Third-party Integration</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Shift Sheduling</TagLabel>
+                <GiSupersonicArrow ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Shift Sheduling</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Mobile App</TagLabel>
+                <ImMobile ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Mobile App</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Url & App tracking</TagLabel>
+                <RiMapPin5Line ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Url & App tracking</TagLabel>
               </Tag>
             </Flex>
 
             <Flex gap="8px" justifyContent="center">
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)">
-                <ImFire ml="-7px" mr="5px" color="RGBA(0, 0, 0, .6)" />
-                <TagLabel color="RGBA(0, 0, 0, .6)">Screeshots</TagLabel>
+                <GoScreenFull ml="-7px" mr="5px" color="RGBA(0, 0, 0, .6)" />
+                <TagLabel ml={2} color="RGBA(0, 0, 0, .6)">
+                  Screeshots
+                </TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Project Tracking</TagLabel>
+                <GoProject ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Project Tracking</TagLabel>
               </Tag>
 
               <Tag size="lg" bg="RGBA(0, 0, 0, .1)" color="RGBA(0, 0, 0, .6)">
-                <ImFire ml="-7px" mr="5px" />
-                <TagLabel>Booking</TagLabel>
+                <TbBrandBooking ml="-7px" mr="5px" />
+                <TagLabel ml={2}>Booking</TagLabel>
               </Tag>
             </Flex>
-            <Flex justifyContent="center" mt={30}> <Button colorScheme="gray.50" variant="outline" pl={50} pr={50}>
+            <Flex justifyContent="center" mt={30}>
+              {" "}
+              <Button colorScheme="gray.50" variant="outline" pl={50} pr={50}>
                 SEE ALL FEATURES
-              </Button></Flex>
+              </Button>
+            </Flex>
             <Flex justifyContent="center">
-              <Text>All the features can be turned on and off to suit eveyone's needs</Text>
+              <Text>
+                All the features can be turned on and off to suit eveyone's
+                needs
+              </Text>
             </Flex>
           </Grid>
         </GridItem>
@@ -354,8 +377,83 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
 
+      <Grid templateColumns="1fr 1fr" pl={100} pr={100} alignItems="center" bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)" pt="60px">
+        <GridItem>
+          <Image src="https://desktime.com/static/web/new-homepage/seamless-workflow/seamless-workflow.webp" />
+        </GridItem>
+        <GridItem>
+          <Heading textAlign="left">
+            A seamless workflow and healthy work-life balance for every employee
+          </Heading>
+          <Grid gap={4} mt={4} textAlign="left" lineHeight={8}>
+            <GridItem>
+              <Tag bg="transparent">
+                {" "}
+                <BsCalendar3 color="green" fontSize="24px" />{" "}
+                <TagLabel fontSize="18px" ml={2}>
+                  Flexible schedule
+                </TagLabel>
+              </Tag>
+              <Text w="80%" ml="6%">
+                Time tracking is proof-of-work and DeskTime's time tracker gives
+                you just that – you can plan your schedule independently, while
+                your manager can simply follow your progress no matter where you
+                are and when you choose to work.
+              </Text>
+            </GridItem>
 
-     
+            <GridItem>
+              <Tag bg="transparent">
+                {" "}
+                <BsFillBellFill color="green" fontSize="24px" />{" "}
+                <TagLabel fontSize="18px" ml={2}>
+                  Regular break reminders
+                </TagLabel>
+              </Tag>
+              <Text w="80%" ml="6%">
+                Our time tracker uses the Pomodoro timer that will keep a
+                cautious eye on your workload and remind you to take regular
+                breaks so you don't lose focus all the while maintaining healthy
+                habits and mental well-being.
+              </Text>
+            </GridItem>
+
+            <GridItem>
+              <Tag bg="transparent">
+                {" "}
+                <CgProfile color="green" fontSize="24px" />{" "}
+                <TagLabel fontSize="18px" ml={2}>
+                  Private time
+                </TagLabel>
+              </Tag>
+              <Text w="80%" ml="6%">
+                DeskTime's Private time feature disables the website and time
+                tracker for when you have to take care of non-work-related tasks
+                during office hours. Employees can feel safe knowing their
+                privacy is protected.
+              </Text>
+            </GridItem>
+
+            <GridItem>
+              <Tag bg="transparent">
+                {" "}
+                <HiOutlineClipboardDocumentList color="green" fontSize="24px" />{" "}
+                <TagLabel fontSize="18px" ml={2}>
+                  No more unbilled hours
+                </TagLabel>
+              </Tag>
+              <Text w="80%" ml="6%">
+                Employee time is pure gold when it comes to resource planning.
+                DeskTime's time tracker even lets you add time spent offline
+                like in meetings, brainstorms, or on work calls so no billable
+                hours go unnoticed.
+              </Text>
+            </GridItem>
+          </Grid>
+        </GridItem>
+      </Grid>
+
+      {/* ===========================next Item===================================== */}
     </>
   );
 }
