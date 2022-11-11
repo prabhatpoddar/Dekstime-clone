@@ -19,11 +19,15 @@ import { CgProfile } from "react-icons/cg";
 import { GrIntegration } from "react-icons/gr";
 import { AiFillClockCircle, AiOutlineEyeInvisible } from "react-icons/ai";
 import { FaLayerGroup } from "react-icons/fa";
-import { HiBuildingOffice, HiDocument,HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import {
+  HiBuildingOffice,
+  HiDocument,
+  HiOutlineClipboardDocumentList,
+} from "react-icons/hi2";
 import { SlGlobe, SlCalculator } from "react-icons/sl";
 import { TbFileInvoice, TbReport, TbBrandBooking } from "react-icons/tb";
 import { GiPumpkinMask, GiSupersonicArrow } from "react-icons/gi";
-import { BsCalendarDate, BsCalendar3,BsFillBellFill } from "react-icons/bs";
+import { BsCalendarDate, BsCalendar3, BsFillBellFill } from "react-icons/bs";
 import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
 import { GoProject, GoScreenFull, GoGraph } from "react-icons/go";
 
@@ -377,7 +381,14 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
 
-      <Grid templateColumns="1fr 1fr" pl={100} pr={100} alignItems="center" bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)" pt="60px">
+      <Grid
+        templateColumns="1fr 1fr"
+        pl={100}
+        pr={100}
+        alignItems="center"
+        bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)"
+        pt="60px"
+      >
         <GridItem>
           <Image src="https://desktime.com/static/web/new-homepage/seamless-workflow/seamless-workflow.webp" />
         </GridItem>
@@ -437,7 +448,10 @@ export default function Home() {
             <GridItem>
               <Tag bg="transparent">
                 {" "}
-                <HiOutlineClipboardDocumentList color="green" fontSize="24px" />{" "}
+                <HiOutlineClipboardDocumentList
+                  color="green"
+                  fontSize="24px"
+                />{" "}
                 <TagLabel fontSize="18px" ml={2}>
                   No more unbilled hours
                 </TagLabel>
@@ -449,10 +463,34 @@ export default function Home() {
                 hours go unnoticed.
               </Text>
             </GridItem>
+            <GridItem>
+              All the features can be turned on and off to suit eveyone's needs
+            </GridItem>
           </Grid>
         </GridItem>
       </Grid>
 
+      {/* ===========================next Item===================================== */}
+
+      <Grid></Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      {/* ===========================next Item===================================== */}
+      {/* ===========================next Item===================================== */}
       {/* ===========================next Item===================================== */}
     </>
   );
