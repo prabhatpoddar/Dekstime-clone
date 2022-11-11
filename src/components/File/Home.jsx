@@ -17,15 +17,29 @@ import { ImFire, ImClock, ImMobile } from "react-icons/im";
 import { BiTask } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { GrIntegration } from "react-icons/gr";
-import { AiFillClockCircle, AiOutlineEyeInvisible } from "react-icons/ai";
-import { FaLayerGroup } from "react-icons/fa";
-import { HiBuildingOffice, HiDocument,HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import {
+  AiFillClockCircle,
+  AiOutlineEyeInvisible,
+  AiFillAndroid,
+} from "react-icons/ai";
+import { FaLayerGroup, FaLinux } from "react-icons/fa";
+import {
+  HiBuildingOffice,
+  HiDocument,
+  HiOutlineClipboardDocumentList,
+} from "react-icons/hi2";
 import { SlGlobe, SlCalculator } from "react-icons/sl";
 import { TbFileInvoice, TbReport, TbBrandBooking } from "react-icons/tb";
 import { GiPumpkinMask, GiSupersonicArrow } from "react-icons/gi";
-import { BsCalendarDate, BsCalendar3,BsFillBellFill } from "react-icons/bs";
+import {
+  BsCalendarDate,
+  BsCalendar3,
+  BsFillBellFill,
+  BsApple,
+} from "react-icons/bs";
 import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
-import { GoProject, GoScreenFull, GoGraph } from "react-icons/go";
+import { GoProject, GoScreenFull, GoGraph, GoCheck } from "react-icons/go";
+import Acording from "./Acording";
 
 export default function Home() {
   return (
@@ -377,7 +391,15 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
 
-      <Grid templateColumns="1fr 1fr" pl={100} pr={100} alignItems="center" bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)" pt="60px">
+      <Grid
+        templateColumns="1fr 1fr"
+        pl={100}
+        pr={100}
+        alignItems="center"
+        bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)"
+        pt="60px"
+        pb={50}
+      >
         <GridItem>
           <Image src="https://desktime.com/static/web/new-homepage/seamless-workflow/seamless-workflow.webp" />
         </GridItem>
@@ -437,7 +459,10 @@ export default function Home() {
             <GridItem>
               <Tag bg="transparent">
                 {" "}
-                <HiOutlineClipboardDocumentList color="green" fontSize="24px" />{" "}
+                <HiOutlineClipboardDocumentList
+                  color="green"
+                  fontSize="24px"
+                />{" "}
                 <TagLabel fontSize="18px" ml={2}>
                   No more unbilled hours
                 </TagLabel>
@@ -449,10 +474,269 @@ export default function Home() {
                 hours go unnoticed.
               </Text>
             </GridItem>
+            <GridItem>
+              All the features can be turned on and off to suit eveyone's needs
+            </GridItem>
           </Grid>
         </GridItem>
       </Grid>
 
+      {/* ===========================next Item===================================== */}
+
+      <Grid
+        templateColumns="1fr 1fr"
+        pl={100}
+        pr={100}
+        bg="RGBA(0, 0, 0, .06)"
+        pt={50}
+      >
+        <GridItem>
+          <Image src="	https://desktime.com/static/web/new-homepage/integrations/integrations.webp" />
+        </GridItem>
+        <GridItem>
+          <Grid gap={6} textAlign="left" pt={50}>
+            <Heading>Integrations with popular work tools</Heading>
+            <Text>
+              From calendar apps to help you track offline time, to project
+              management software to make project and task tracking accurate,
+              while effortless. DeskTime can simplify every aspect of your
+              workflow.
+            </Text>
+            <Button colorScheme="gray.50" variant="outline" w={200}>
+              READ MORE
+            </Button>
+          </Grid>
+        </GridItem>
+      </Grid>
+
+      {/* ===========================next Item===================================== */}
+
+      <Grid mt={70} pl={100} pr={100}>
+        <GridItem>
+          <Grid w={750} m="auto">
+            <Heading>
+              A single time tracking app for desktops and mobile phones
+            </Heading>
+            <Text>
+              Whether in the office or on the go – use DeskTime to keep track of
+              your and your team's time.
+            </Text>
+          </Grid>
+        </GridItem>
+        <GridItem>
+          {/* =====================================three part start=================== */}
+          <Grid
+            templateColumns="1fr 1fr 1fr"
+            pl={100}
+            pr={100}
+            justifyContent="left"
+            color="RGB(0,0,0,0.6)"
+            gap={10}
+            mt={50}
+          >
+            <GridItem>
+              <Grid gap={3}>
+                <GridItem textAlign="left">
+                  <Image src="	https://desktime.com/static/web/new-homepage/desktop/desktop.webp" />
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Heading size="md">DeskTime for desktops</Heading>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Flex>
+                    <Button bg="transparent">
+                      <BsApple fontSize="30px" />
+                    </Button>
+                    <Button bg="transparent">
+                      <FaLinux fontSize="30px" />
+                    </Button>
+                    <Button bg="transparent">
+                      <AiFillAndroid fontSize="30px" />
+                    </Button>
+                  </Flex>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Text>Requires download and installation</Text>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Grid justifyContent="left" gap={3}>
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Fully automated time tracker
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        App, URL & Document title tracking
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Project and task tracking
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Screenshots
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Idle and Private time
+                      </TagLabel>
+                    </Tag>
+                  </Grid>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Button
+                    colorScheme="gray.50"
+                    variant="outline"
+                    w={120}
+                    size="sm"
+                  >
+                    LEARN MORE
+                  </Button>
+                </GridItem>
+              </Grid>
+            </GridItem>
+            <GridItem>
+              <Grid gap={3}>
+                <GridItem textAlign="left">
+                  <Image src="	https://desktime.com/static/web/new-homepage/mobile/mobile.webp" />
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Heading size="md">DeskTime for mobile phones</Heading>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Flex>
+                    <Button bg="transparent">
+                      <BsApple fontSize="30px" />
+                    </Button>
+
+                    <Button bg="transparent">
+                      <AiFillAndroid fontSize="30px" />
+                    </Button>
+                  </Flex>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Text>Requires download and installation</Text>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Grid justifyContent="left" gap={3}>
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Manual time tracker
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Workday overview
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Project and task tracking
+                      </TagLabel>
+                    </Tag>
+                  </Grid>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Button
+                    colorScheme="gray.50"
+                    variant="outline"
+                    w={120}
+                    size="sm"
+                  >
+                    LEARN MORE
+                  </Button>
+                </GridItem>
+              </Grid>
+            </GridItem>
+            <GridItem>
+              <Grid gap={3}>
+                <GridItem textAlign="left">
+                  <Image src="	https://desktime.com/static/web/new-homepage/webtimer/webtimer.webp" />
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Heading size="md">Manual time tracking</Heading>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Flex>
+                    <Text color="green" as="b">Supported on all popular browsers</Text>
+                  </Flex>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Text>No software installation necessary</Text>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Grid justifyContent="left" gap={3}>
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Manual time tracker
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Workday overview
+                      </TagLabel>
+                    </Tag>
+
+                    <Tag bg="transparent">
+                      {" "}
+                      <GoCheck color="green" fontSize="24px" />{" "}
+                      <TagLabel fontSize="18px" color="RGB(0,0,0,0.6)">
+                        Project and task tracking
+                      </TagLabel>
+                    </Tag>
+                  </Grid>
+                </GridItem>
+                <GridItem textAlign="left">
+                  <Button
+                    colorScheme="gray.50"
+                    variant="outline"
+                    w={120}
+                    size="sm"
+                  >
+                    LEARN MORE
+                  </Button>
+                </GridItem>
+              </Grid>
+            </GridItem>
+          </Grid>
+        </GridItem>
+      </Grid>
+
+      {/* ===========================next Item===================================== */}
+      <Grid>
+        <Acording/>
+      </Grid>
       {/* ===========================next Item===================================== */}
     </>
   );

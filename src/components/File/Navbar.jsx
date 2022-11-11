@@ -10,7 +10,6 @@ import {
   Show,
   Hide,
   Spacer,
- 
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import React, { useRef } from "react";
@@ -20,45 +19,49 @@ import { IoExitOutline } from "react-icons/io5";
 import Slider from "./Slider";
 
 export default function Navbar() {
-  
   return (
     <Flex
       h="96px"
       borderTop="4px solid #4EA819"
       bg="white"
       boxShadow="lg"
-      zIndex="1000"
+      position="sticky"
+      top="0"
+      zIndex={1000}
     >
       <Flex w="78%" m="auto" h="92px">
-        <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
-        <Spacer/>
-       
+        <Flex display="flex" alignItems="center">
+          <Show above="base" below="xl">
+            <Slider />
+          </Show>
+        </Flex>
+        <Spacer />
 
-        <Flex w="383px" >
+        <Flex w="383px">
           <Image
             w="168px"
             src="https://desktime.com/assets/design/dist/assets/Logo-Dark-Text-Without-Padding.svg"
           />
         </Flex>
         <Hide below="xl">
-          <Flex gap={4} alignItems="center">
+          <Flex gap={4} alignItems="center" as="b" color="RGB(0,0,0,0.6)">
             <Link to="/">
-              <b>Demo</b>
+              Demo
             </Link>
             <Link to="/">
-              <b>Feature</b>
+            Feature
             </Link>
             <Link to="/">
-              <b>Pricing</b>
+            Pricing
             </Link>
             <Link to="/">
-              <b>About us</b>
+            About us
             </Link>
             <Link to="/">
-              <b>FAQ</b>
+            FAQ
             </Link>
             <Link to="/">
-              <b>Blog</b>
+            Blog
             </Link>
             <ButtonGroup gap="2">
               <Button colorScheme="whatsapp" variant="outline">
@@ -91,11 +94,13 @@ export default function Navbar() {
             </Menu>
           </Flex>
         </Hide>
-        <Spacer/>
-        <Flex display="flex" alignItems="center" ><Show above="base" below="xl"><IoExitOutline fontSize="30px"/></Show></Flex>
+        <Spacer />
+        <Flex display="flex" alignItems="center">
+          <Show above="base" below="xl">
+            <IoExitOutline fontSize="30px" />
+          </Show>
+        </Flex>
       </Flex>
     </Flex>
   );
 }
-
-
