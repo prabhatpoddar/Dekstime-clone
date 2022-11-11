@@ -81,10 +81,16 @@ export default function Slider() {
           </DrawerBody>
 
           <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Login
-            </Button>
-            <Button colorScheme="blue">Signup</Button>
+            <Link to="/login">
+              <Button variant="outline" mr={3} onClick={onClose}>
+                Login
+              </Button>
+            </Link>
+            <Link to="/signup">
+              <Button colorScheme="blue" onClick={onClose}>
+                Signup
+              </Button>
+            </Link>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
