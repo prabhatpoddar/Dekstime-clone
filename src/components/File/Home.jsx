@@ -40,6 +40,7 @@ import {
 import { RiTimerFlashLine, RiMapPin5Line } from "react-icons/ri";
 import { GoProject, GoScreenFull, GoGraph, GoCheck } from "react-icons/go";
 import Acording from "./Acording";
+import GreenContainer from "./GreenContainer";
 
 export default function Home() {
   return (
@@ -738,6 +739,10 @@ export default function Home() {
         <Acording/>
       </Grid>
       {/* ===========================next Item===================================== */}
+
+      <Grid>
+        <GreenContainer/>
+      </Grid>
     </>
   );
 }
