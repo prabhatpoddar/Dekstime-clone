@@ -388,6 +388,7 @@ export default function Home() {
         alignItems="center"
         bgGradient="linear(to-b, RGBA(0, 0, 0, .1), white)"
         pt="60px"
+        pb={50}
       >
         <GridItem>
           <Image src="https://desktime.com/static/web/new-homepage/seamless-workflow/seamless-workflow.webp" />
@@ -472,9 +473,39 @@ export default function Home() {
 
       {/* ===========================next Item===================================== */}
 
-      <Grid></Grid>
+      <Grid templateColumns="1fr 1fr" pl={100} pr={100} bg="RGBA(0, 0, 0, .06)" pt={50}>
+        <GridItem>
+          <Image src="	https://desktime.com/static/web/new-homepage/integrations/integrations.webp" />
+        </GridItem>
+        <GridItem>
+          <Grid gap={6} textAlign="left" pt={50}>
+          <Heading>Integrations with popular work tools</Heading>
+          <Text>
+            From calendar apps to help you track offline time, to project
+            management software to make project and task tracking accurate,
+            while effortless. DeskTime can simplify every aspect of your
+            workflow.
+          </Text>
+          <Button colorScheme="gray.50" variant="outline" w={200}>
+            READ MORE
+          </Button>
+          </Grid>
+        </GridItem>
+      </Grid>
 
       {/* ===========================next Item===================================== */}
+      
+
+
+
+
+
+
+
+
+
+
+
       {/* ===========================next Item===================================== */}
       {/* ===========================next Item===================================== */}
     </>
