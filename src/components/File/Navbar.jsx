@@ -27,7 +27,9 @@ export default function Navbar() {
       borderTop="4px solid #4EA819"
       bg="white"
       boxShadow="lg"
-      zIndex="1000"
+      position="sticky"
+      top="0"
+      zIndex={1000}
     >
       <Flex w="78%" m="auto" h="92px">
         <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
