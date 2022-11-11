@@ -10,7 +10,6 @@ import {
   Show,
   Hide,
   Spacer,
- 
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import React, { useRef } from "react";
@@ -20,7 +19,6 @@ import { IoExitOutline } from "react-icons/io5";
 import Slider from "./Slider";
 
 export default function Navbar() {
-  
   return (
     <Flex
       h="96px"
@@ -32,11 +30,14 @@ export default function Navbar() {
       zIndex={1000}
     >
       <Flex w="78%" m="auto" h="92px">
-        <Flex display="flex" alignItems="center"><Show above="base" below="xl"><Slider/></Show></Flex>
-        <Spacer/>
-       
+        <Flex display="flex" alignItems="center">
+          <Show above="base" below="xl">
+            <Slider />
+          </Show>
+        </Flex>
+        <Spacer />
 
-        <Flex w="383px" >
+        <Flex w="383px">
           <Image
             w="168px"
             src="https://desktime.com/assets/design/dist/assets/Logo-Dark-Text-Without-Padding.svg"
@@ -93,11 +94,13 @@ export default function Navbar() {
             </Menu>
           </Flex>
         </Hide>
-        <Spacer/>
-        <Flex display="flex" alignItems="center" ><Show above="base" below="xl"><IoExitOutline fontSize="30px"/></Show></Flex>
+        <Spacer />
+        <Flex display="flex" alignItems="center">
+          <Show above="base" below="xl">
+            <IoExitOutline fontSize="30px" />
+          </Show>
+        </Flex>
       </Flex>
     </Flex>
   );
 }
-
-
