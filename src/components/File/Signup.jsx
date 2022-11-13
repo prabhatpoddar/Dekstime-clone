@@ -1,8 +1,19 @@
 import { Grid, GridItem, Heading, Button, Input, Text, Flex, Image ,Divider} from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Signup() {
+  const [name,setName]=useState("")
+  const [userName,setUserName]=useState("")
+  const [passwoard,setPassword]=useState("")
+  const [form ,setForm]=useState({
+    name,
+    userName,
+    passwoard
+  })
+  const handelSubmit=()=>{
+    
+  }
   return (
     <Grid gap={5}>
       <GridItem>
@@ -15,18 +26,18 @@ export default function Signup() {
         <Grid justifyContent="center" gap={5}>
           <GridItem w="340px" >
             <Text textAlign="left">First and last name</Text>
-            <Input type="email" placeholder="Type in your first and last name" />
+            <Input type="email" placeholder="Type in your first and last name" onChange={e=>setName(e.target.value)} value={name} />
           </GridItem>
           <GridItem w="340px">
             <Text textAlign="left">Email</Text>
-            <Input type="email" placeholder="Type in your email address" />
+            <Input type="email" placeholder="Type in your email address" onChange={e=>setUserName(e.target.value)} value={userName} />
           </GridItem>
           <GridItem w="340px">
             <Text textAlign="left">Password</Text>
-            <Input type="password" w="340px" placeholder="Create a password" />
+            <Input type="password" w="340px" placeholder="Create a password" onChange={e=>setPassword(e.target.value)} value={passwoard} />
           </GridItem>
           <GridItem>
-            <Button colorScheme='whatsapp' variant='solid' w="340px">
+            <Button colorScheme='whatsapp' variant='solid' w="340px" onClick={handelSubmit}>
               SIGN UP FOR FREE
             </Button>
           </GridItem>
