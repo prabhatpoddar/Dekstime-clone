@@ -12,7 +12,6 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { BiFootball } from "react-icons/bi";
 import { IoExitOutline } from "react-icons/io5";
