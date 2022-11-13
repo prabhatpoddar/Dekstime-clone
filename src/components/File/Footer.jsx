@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <Flex w="100%">
+    <Flex w="100%"  >
       <Grid
         w="100%"
         templateColumns="repeat(5, 1fr)"
