@@ -1,19 +1,34 @@
-import { Grid, GridItem, Heading, Button, Input, Text, Flex, Image ,Divider} from '@chakra-ui/react'
+import { Grid, GridItem, Heading, Button, Input, Text, Flex, Image, Divider } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Signup() {
-  const [name,setName]=useState("")
-  const [userName,setUserName]=useState("")
-  const [passwoard,setPassword]=useState("")
-  const [form ,setForm]=useState({
-    name,
-    userName,
-    passwoard
-  })
-  const handelSubmit=()=>{
-    
+  const [name, setName] = useState("")
+  const [userName, setUserName] = useState("")
+  const [passwoard, setPassword] = useState("")
+
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    if (name == "" && userName == "" && passwoard == "") {
+      alert("Fill Form Properly");
+      return
+    }
+    fetch(`https://fast-lake-94384.herokuapp.com/api/posts`, {
+      method: "POST",
+      body: JSON.stringify({ name, userName, passwoard }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      alert("Signup Succecfully")
+    }).catch((err) => {
+      console.log('err:', err)
+
+    })
   }
+
+
+
   return (
     <Grid gap={5}>
       <GridItem>
@@ -26,15 +41,15 @@ export default function Signup() {
         <Grid justifyContent="center" gap={5}>
           <GridItem w="340px" >
             <Text textAlign="left">First and last name</Text>
-            <Input type="email" placeholder="Type in your first and last name" onChange={e=>setName(e.target.value)} value={name} />
+            <Input type="email" placeholder="Type in your first and last name" onChange={e => setName(e.target.value)} value={name} />
           </GridItem>
           <GridItem w="340px">
             <Text textAlign="left">Email</Text>
-            <Input type="email" placeholder="Type in your email address" onChange={e=>setUserName(e.target.value)} value={userName} />
+            <Input type="email" placeholder="Type in your email address" onChange={e => setUserName(e.target.value)} value={userName} />
           </GridItem>
           <GridItem w="340px">
             <Text textAlign="left">Password</Text>
-            <Input type="password" w="340px" placeholder="Create a password" onChange={e=>setPassword(e.target.value)} value={passwoard} />
+            <Input type="password" w="340px" placeholder="Create a password" onChange={e => setPassword(e.target.value)} value={passwoard} />
           </GridItem>
           <GridItem>
             <Button colorScheme='whatsapp' variant='solid' w="340px" onClick={handelSubmit}>
@@ -66,7 +81,7 @@ export default function Signup() {
       <GridItem>
         <Text mt={6}>Are you already registered? <Link to="/login"><u><b>Log in here</b></u></Link></Text>
       </GridItem>
-<Divider mt={9} boxShadow="lg"/>
+      <Divider mt={9} boxShadow="lg" />
 
     </Grid>
   )
