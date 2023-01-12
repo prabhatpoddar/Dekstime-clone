@@ -1,6 +1,6 @@
 ## Food Ordering App
 
-## Visit Site :-https://resturent-alpha.vercel.app/home
+## Visit Site :-https://bitter-measure-5999-prabhatpoddar.vercel.app/
 
 ### Pages:
 
@@ -23,7 +23,7 @@
 
 ```
 #### Project Look Like 
-<img src="./public/Assets/Home.png"/>
+<img src="https://user-images.githubusercontent.com/98205449/212038669-9f07b19a-3c24-4bfc-bbd7-3edf85322393.png"/>
 <img src="./public/Assets/Popular.png"/>
 <img src="./public/Assets/Foods.png"/>
 <img src="./public/Assets/Foods2.png"/>
