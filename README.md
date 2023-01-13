@@ -17,8 +17,9 @@
 ---
 
 1. React js
-2. 
-3. JavaScript
+2. Chakra UI
+3. Axios
+
 
 #### Project Look Like 
 ![image](https://user-images.githubusercontent.com/98205449/212038669-9f07b19a-3c24-4bfc-bbd7-3edf85322393.png)
