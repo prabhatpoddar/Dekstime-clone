@@ -16,8 +16,8 @@
 
 ---
 
-1. HTML
-2. CSS
+1. React js
+2. 
 3. JavaScript
 
 #### Project Look Like 
