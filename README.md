@@ -10,8 +10,6 @@
 
 ---
 
-
-
 ### Technologies Used:
 
 ---
